@@ -58,19 +58,20 @@
 -(void)setUpViewController
 {
     XCArenaViewController *arena = [[XCArenaViewController alloc]init];
-    [self setUpOneViewController:arena image:[UIImage imageNamed:@"TabBar_Arena_new"] selectImge:[UIImage imageNamed:@"TabBar_Arena_selected_new"]];
+    [self setUpOneViewController:arena image:[UIImage imageNamed:@"TabBar_Arena_new"] selectImge:[UIImage imageNamed:@"TabBar_Arena_selected_new"]barTitle:@"购彩大厅"];
     XCDiscoverViewController *discover = [[XCDiscoverViewController alloc]init];
-    [self setUpOneViewController:discover image:[UIImage imageNamed:@"TabBar_LotteryHall_new"] selectImge:[UIImage imageNamed:@"TabBar_LotteryHall_selected_new"]];
+    [self setUpOneViewController:discover image:[UIImage imageNamed:@"TabBar_LotteryHall_new"] selectImge:[UIImage imageNamed:@"TabBar_LotteryHall_selected_new"]barTitle:nil];
     XCHallViewController *hall = [[XCHallViewController alloc]init];
-    [self setUpOneViewController:hall image:[UIImage imageNamed:@"TabBar_Discovery_new"] selectImge:[UIImage imageNamed:@"TabBar_Discovery_selected_new"]];
+    [self setUpOneViewController:hall image:[UIImage imageNamed:@"TabBar_Discovery_new"] selectImge:[UIImage imageNamed:@"TabBar_Discovery_selected_new"]barTitle:@"发现"];
     XCHistoryViewController *history = [[XCHistoryViewController alloc]init];
-    [self setUpOneViewController:history image:[UIImage imageNamed:@"TabBar_History_new"] selectImge:[UIImage imageNamed:@"TabBar_History_selected_new"]];
+    [self setUpOneViewController:history image:[UIImage imageNamed:@"TabBar_History_new"] selectImge:[UIImage imageNamed:@"TabBar_History_selected_new"]barTitle:@"开奖信息"];
     XCLotteryViewController *lottery = [[XCLotteryViewController alloc]init];
-    [self setUpOneViewController:lottery image:[UIImage imageNamed:@"TabBar_MyLottery_new"] selectImge:[UIImage imageNamed:@"TabBar_MyLottery_selected_new"]];
+    [self setUpOneViewController:lottery image:[UIImage imageNamed:@"TabBar_MyLottery_new"] selectImge:[UIImage imageNamed:@"TabBar_MyLottery_selected_new"]barTitle:@"我的彩票"];
 }
 #pragma mark - 添加一个子控制器
--(void)setUpOneViewController:(UIViewController *)vc image:(UIImage *)image selectImge:(UIImage *)selectimage
+-(void)setUpOneViewController:(UIViewController *)vc image:(UIImage *)image selectImge:(UIImage *)selectimage barTitle:(NSString *)title
 {
+    vc.navigationItem.title = title;
     vc.tabBarItem.image = image;
     vc.tabBarItem.selectedImage = selectimage;
     //记录所有控制器对应的按钮内容
@@ -80,7 +81,7 @@
     XCNavigationController *nav = [[XCNavigationController alloc]initWithRootViewController:vc];
 //    //设置导航空调背景图片，一定要在导航条显示之前设置
 //    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
-//    [self addChildViewController:nav];
+    [self addChildViewController:nav];
 }
 - (UIColor *)randomColor
 {

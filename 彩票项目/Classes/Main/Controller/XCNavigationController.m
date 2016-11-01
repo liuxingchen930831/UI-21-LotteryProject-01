@@ -29,5 +29,12 @@
     UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:self, nil];
     
     [bar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
+    
+    //设置导航条的富文本
+    NSMutableDictionary *titleAttr = [NSMutableDictionary dictionary];
+    titleAttr[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    titleAttr[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
+    [bar setTitleTextAttributes:titleAttr];
+    
 }
 @end

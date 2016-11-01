@@ -26,3 +26,8 @@ XCNavigationController *nav = [[XCNavigationController alloc]initWithRootViewCon
 //    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
 //    [self addChildViewController:nav];
 ```
+
+// @property如果在分类里面只会生成get,set方法的声明，并不会生成成员属性
+
+- imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal 显示默认图片不渲染
+

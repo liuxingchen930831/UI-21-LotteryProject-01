@@ -20,6 +20,8 @@
 		20EB07091DC86D0600F40FAE /* XCTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB07081DC86D0600F40FAE /* XCTabbar.m */; };
 		20EB070C1DC884C500F40FAE /* XCTabbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB070B1DC884C500F40FAE /* XCTabbarButton.m */; };
 		20EB070F1DC8936D00F40FAE /* XCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB070E1DC8936D00F40FAE /* XCNavigationController.m */; };
+		6934F7D51DC8E60B0067BBAA /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6934F7D41DC8E60B0067BBAA /* UIImage+image.m */; };
+		6934F7DA1DC8E9DD0067BBAA /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6934F7D91DC8E9DD0067BBAA /* UIView+frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,11 @@
 		20EB070B1DC884C500F40FAE /* XCTabbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTabbarButton.m; sourceTree = "<group>"; };
 		20EB070D1DC8936D00F40FAE /* XCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCNavigationController.h; sourceTree = "<group>"; };
 		20EB070E1DC8936D00F40FAE /* XCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCNavigationController.m; sourceTree = "<group>"; };
+		6934F7D31DC8E60B0067BBAA /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
+		6934F7D41DC8E60B0067BBAA /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
+		6934F7D71DC8E7880067BBAA /* 彩票项目.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "彩票项目.pch"; sourceTree = "<group>"; };
+		6934F7D81DC8E9DD0067BBAA /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		6934F7D91DC8E9DD0067BBAA /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +90,11 @@
 				20EB06D91DC8683000F40FAE /* Classes */,
 				20EB06C51DC866D600F40FAE /* AppDelegate.h */,
 				20EB06C61DC866D600F40FAE /* AppDelegate.m */,
+				6934F7D31DC8E60B0067BBAA /* UIImage+image.h */,
+				6934F7D41DC8E60B0067BBAA /* UIImage+image.m */,
+				6934F7D81DC8E9DD0067BBAA /* UIView+frame.h */,
+				6934F7D91DC8E9DD0067BBAA /* UIView+frame.m */,
+				6934F7D71DC8E7880067BBAA /* 彩票项目.pch */,
 				20EB06CE1DC866D600F40FAE /* Assets.xcassets */,
 				20EB06D01DC866D600F40FAE /* LaunchScreen.storyboard */,
 				20EB06D31DC866D600F40FAE /* Info.plist */,
@@ -391,10 +403,12 @@
 				20EB06C71DC866D600F40FAE /* AppDelegate.m in Sources */,
 				20EB07061DC86CF000F40FAE /* XCTabBarController.m in Sources */,
 				20EB06C41DC866D600F40FAE /* main.m in Sources */,
+				6934F7D51DC8E60B0067BBAA /* UIImage+image.m in Sources */,
 				20EB06F71DC868B100F40FAE /* XCHallViewController.m in Sources */,
 				20EB06F41DC8689400F40FAE /* XCDiscoverViewController.m in Sources */,
 				20EB07091DC86D0600F40FAE /* XCTabbar.m in Sources */,
 				20EB06F11DC8687700F40FAE /* XCArenaViewController.m in Sources */,
+				6934F7DA1DC8E9DD0067BBAA /* UIView+frame.m in Sources */,
 				20EB070F1DC8936D00F40FAE /* XCNavigationController.m in Sources */,
 				20EB06FA1DC868DC00F40FAE /* XCLotteryViewController.m in Sources */,
 			);
@@ -500,7 +514,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "彩票项目/彩票项目.pch";
 				INFOPLIST_FILE = "彩票项目/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.intelet.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -511,7 +528,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "彩票项目/彩票项目.pch";
 				INFOPLIST_FILE = "彩票项目/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.intelet.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -537,6 +557,7 @@
 				20EB06D81DC866D600F40FAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
