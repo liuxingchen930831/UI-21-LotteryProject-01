@@ -7,7 +7,8 @@
 //
 
 #import "XCHallViewController.h"
-
+#import "XCActiveMenu.h"
+#import "XCCover.h"
 @interface XCHallViewController ()
 
 @end
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpNav];
+    
 }
 -(void)setUpNav
 {
@@ -24,7 +26,9 @@
 }
 -(void)active
 {
-    NSLog(@"active");
+    //弹出蒙版
+   [XCCover show];
+    [XCActiveMenu showInpoint:self.view.center];
 }
 #pragma mark - Table view data source
 

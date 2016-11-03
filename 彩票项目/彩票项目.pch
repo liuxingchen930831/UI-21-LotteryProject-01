@@ -7,3 +7,5 @@
 //
 
 #import "UIImage+image.h"
+#define XCKeyWindow [UIApplication sharedApplication].keyWindow
+#define XCScreenBouns [UIScreen mainScreen].bounds
