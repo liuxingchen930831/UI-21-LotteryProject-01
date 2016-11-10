@@ -7,9 +7,11 @@
 //
 
 #import "XCHallViewController.h"
-#import "XCActiveMenu.h"
-#import "XCCover.h"
-@interface XCHallViewController ()
+#import "XMGCover.h"
+#import "XMGActiveMenu.h"
+#import "XCDownView.h"
+#import "XCItems.h"
+@interface XCHallViewController ()<XMGActiveMenuDelegate>
 
 @end
 
@@ -23,15 +25,32 @@
 -(void)setUpNav
 {
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageWithOriginalRenderingImage:@"CS50_activity_image"] style:UIBarButtonItemStylePlain target:self action:@selector(active)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageWithOriginalRenderingImage:@"Development"] style:UIBarButtonItemStylePlain target:self action:@selector(popMenu)];
+}
+-(void)popMenu
+{
+    XCItems *item0 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+    XCItems *item1 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+    XCItems *item2 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+    XCItems *item3 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+    XCItems *item4 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+    XCItems *item5 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+    [XCDownView showWithItems:@[item0,item1,item2,item3,item4,item5] oriY:64];
 }
 -(void)active
 {
-    //弹出蒙版
-   [XCCover show];
-    [XCActiveMenu showInpoint:self.view.center];
+    [XMGCover show];
+    XMGActiveMenu *menu = [XMGActiveMenu showInPoint:self.view.center];
+    menu.delegate = self;
 }
-#pragma mark - Table view data source
-
+-(void)activeMenuDidClickCloseBtn:(XMGActiveMenu *)menu
+{
+    
+    
+    [XMGActiveMenu hideInPoint:CGPointMake(44, 44) completion:^{
+        [XMGCover hide];
+    }];
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
     return 0;

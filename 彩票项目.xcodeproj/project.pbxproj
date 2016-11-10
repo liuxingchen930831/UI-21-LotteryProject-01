@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		207882B51DD02C6700A369AF /* XMGActiveMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 207882B11DD02C6700A369AF /* XMGActiveMenu.m */; };
+		207882B61DD02C6700A369AF /* XMGActiveMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 207882B21DD02C6700A369AF /* XMGActiveMenu.xib */; };
+		207882B71DD02C6700A369AF /* XMGCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 207882B41DD02C6700A369AF /* XMGCover.m */; };
 		20EB06C41DC866D600F40FAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB06C31DC866D600F40FAE /* main.m */; };
 		20EB06C71DC866D600F40FAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB06C61DC866D600F40FAE /* AppDelegate.m */; };
 		20EB06CF1DC866D600F40FAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EB06CE1DC866D600F40FAE /* Assets.xcassets */; };
@@ -20,14 +23,18 @@
 		20EB07091DC86D0600F40FAE /* XCTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB07081DC86D0600F40FAE /* XCTabbar.m */; };
 		20EB070C1DC884C500F40FAE /* XCTabbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB070B1DC884C500F40FAE /* XCTabbarButton.m */; };
 		20EB070F1DC8936D00F40FAE /* XCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB070E1DC8936D00F40FAE /* XCNavigationController.m */; };
+		20F6AC2D1DD2E7E300F90158 /* XCDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F6AC2C1DD2E7E300F90158 /* XCDownView.m */; };
+		20F6AC301DD2E81500F90158 /* XCItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F6AC2F1DD2E81500F90158 /* XCItems.m */; };
 		6934F7D51DC8E60B0067BBAA /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6934F7D41DC8E60B0067BBAA /* UIImage+image.m */; };
 		6934F7DA1DC8E9DD0067BBAA /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6934F7D91DC8E9DD0067BBAA /* UIView+frame.m */; };
-		69A647F21DCB7CCE005906BE /* XCCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A647F11DCB7CCE005906BE /* XCCover.m */; };
-		69A647F51DCB7EA3005906BE /* XCActiveMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A647F41DCB7EA3005906BE /* XCActiveMenu.m */; };
-		69A647F71DCB7EAC005906BE /* XCActiveMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A647F61DCB7EAC005906BE /* XCActiveMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		207882B01DD02C6700A369AF /* XMGActiveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGActiveMenu.h; sourceTree = "<group>"; };
+		207882B11DD02C6700A369AF /* XMGActiveMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGActiveMenu.m; sourceTree = "<group>"; };
+		207882B21DD02C6700A369AF /* XMGActiveMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGActiveMenu.xib; sourceTree = "<group>"; };
+		207882B31DD02C6700A369AF /* XMGCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGCover.h; sourceTree = "<group>"; };
+		207882B41DD02C6700A369AF /* XMGCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGCover.m; sourceTree = "<group>"; };
 		20EB06BF1DC866D600F40FAE /* 彩票项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EB06C31DC866D600F40FAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20EB06C51DC866D600F40FAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,16 +60,15 @@
 		20EB070B1DC884C500F40FAE /* XCTabbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTabbarButton.m; sourceTree = "<group>"; };
 		20EB070D1DC8936D00F40FAE /* XCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCNavigationController.h; sourceTree = "<group>"; };
 		20EB070E1DC8936D00F40FAE /* XCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCNavigationController.m; sourceTree = "<group>"; };
+		20F6AC2B1DD2E7E300F90158 /* XCDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDownView.h; sourceTree = "<group>"; };
+		20F6AC2C1DD2E7E300F90158 /* XCDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDownView.m; sourceTree = "<group>"; };
+		20F6AC2E1DD2E81500F90158 /* XCItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCItems.h; path = "彩票项目/Classes/Hall(购彩大厅)/View/XCItems.h"; sourceTree = SOURCE_ROOT; };
+		20F6AC2F1DD2E81500F90158 /* XCItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XCItems.m; path = "彩票项目/Classes/Hall(购彩大厅)/View/XCItems.m"; sourceTree = SOURCE_ROOT; };
 		6934F7D31DC8E60B0067BBAA /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
 		6934F7D41DC8E60B0067BBAA /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
 		6934F7D71DC8E7880067BBAA /* 彩票项目.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "彩票项目.pch"; sourceTree = "<group>"; };
 		6934F7D81DC8E9DD0067BBAA /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
 		6934F7D91DC8E9DD0067BBAA /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
-		69A647F01DCB7CCE005906BE /* XCCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCCover.h; sourceTree = "<group>"; };
-		69A647F11DCB7CCE005906BE /* XCCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCCover.m; sourceTree = "<group>"; };
-		69A647F31DCB7EA3005906BE /* XCActiveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCActiveMenu.h; sourceTree = "<group>"; };
-		69A647F41DCB7EA3005906BE /* XCActiveMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCActiveMenu.m; sourceTree = "<group>"; };
-		69A647F61DCB7EAC005906BE /* XCActiveMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCActiveMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +226,8 @@
 		20EB06E41DC8683000F40FAE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				20F6AC2E1DD2E81500F90158 /* XCItems.h */,
+				20F6AC2F1DD2E81500F90158 /* XCItems.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,11 +235,13 @@
 		20EB06E51DC8683000F40FAE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				69A647F01DCB7CCE005906BE /* XCCover.h */,
-				69A647F11DCB7CCE005906BE /* XCCover.m */,
-				69A647F31DCB7EA3005906BE /* XCActiveMenu.h */,
-				69A647F41DCB7EA3005906BE /* XCActiveMenu.m */,
-				69A647F61DCB7EAC005906BE /* XCActiveMenu.xib */,
+				207882B01DD02C6700A369AF /* XMGActiveMenu.h */,
+				207882B11DD02C6700A369AF /* XMGActiveMenu.m */,
+				207882B21DD02C6700A369AF /* XMGActiveMenu.xib */,
+				207882B31DD02C6700A369AF /* XMGCover.h */,
+				207882B41DD02C6700A369AF /* XMGCover.m */,
+				20F6AC2B1DD2E7E300F90158 /* XCDownView.h */,
+				20F6AC2C1DD2E7E300F90158 /* XCDownView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,9 +409,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69A647F71DCB7EAC005906BE /* XCActiveMenu.xib in Resources */,
 				20EB06D21DC866D600F40FAE /* LaunchScreen.storyboard in Resources */,
 				20EB06CF1DC866D600F40FAE /* Assets.xcassets in Resources */,
+				207882B61DD02C6700A369AF /* XMGActiveMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,17 +426,19 @@
 				20EB07001DC8691F00F40FAE /* XCHistoryViewController.m in Sources */,
 				20EB06C71DC866D600F40FAE /* AppDelegate.m in Sources */,
 				20EB07061DC86CF000F40FAE /* XCTabBarController.m in Sources */,
-				69A647F21DCB7CCE005906BE /* XCCover.m in Sources */,
 				20EB06C41DC866D600F40FAE /* main.m in Sources */,
+				20F6AC2D1DD2E7E300F90158 /* XCDownView.m in Sources */,
 				6934F7D51DC8E60B0067BBAA /* UIImage+image.m in Sources */,
 				20EB06F71DC868B100F40FAE /* XCHallViewController.m in Sources */,
-				69A647F51DCB7EA3005906BE /* XCActiveMenu.m in Sources */,
 				20EB06F41DC8689400F40FAE /* XCDiscoverViewController.m in Sources */,
 				20EB07091DC86D0600F40FAE /* XCTabbar.m in Sources */,
 				20EB06F11DC8687700F40FAE /* XCArenaViewController.m in Sources */,
+				20F6AC301DD2E81500F90158 /* XCItems.m in Sources */,
 				6934F7DA1DC8E9DD0067BBAA /* UIView+frame.m in Sources */,
+				207882B71DD02C6700A369AF /* XMGCover.m in Sources */,
 				20EB070F1DC8936D00F40FAE /* XCNavigationController.m in Sources */,
 				20EB06FA1DC868DC00F40FAE /* XCLotteryViewController.m in Sources */,
+				207882B51DD02C6700A369AF /* XMGActiveMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
