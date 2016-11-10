@@ -12,15 +12,30 @@
 #import "XCDownView.h"
 #import "XCItems.h"
 @interface XCHallViewController ()<XMGActiveMenuDelegate>
-
+@property(nonatomic,assign)BOOL isMenuPop;
+/** 菜单 */
+@property(nonatomic,weak)XCDownView * downView ;
 @end
 
 @implementation XCHallViewController
 
+-(XCDownView *)downView
+{
+    if (_downView == nil) {
+        XCItems *item0 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        XCItems *item1 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        XCItems *item2 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        XCItems *item3 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        XCItems *item4 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        XCItems *item5 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        _downView = [XCDownView showshowInView:self.view items:@[item0,item1,item2,item3,item4,item5] oriY:0];
+    }
+    return _downView;
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpNav];
-    
 }
 -(void)setUpNav
 {
@@ -29,13 +44,14 @@
 }
 -(void)popMenu
 {
-    XCItems *item0 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
-    XCItems *item1 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
-    XCItems *item2 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
-    XCItems *item3 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
-    XCItems *item4 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
-    XCItems *item5 = [XCItems itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
-    [XCDownView showWithItems:@[item0,item1,item2,item3,item4,item5] oriY:64];
+    if (self.isMenuPop == NO) {
+        [self downView];
+    }else{
+        [self.downView hide];
+        
+    }
+    _isMenuPop = !_isMenuPop;
+    
 }
 -(void)active
 {

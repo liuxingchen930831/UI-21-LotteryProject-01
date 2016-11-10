@@ -23,7 +23,7 @@
     }
     return _Mitems;
 }
-+(void)showWithItems:(NSArray *)itmes oriY:(CGFloat)oriY
++(instancetype)showshowInView:(UIView *)superView items:(NSArray *)itmes oriY:(CGFloat)oriY
 {
     NSUInteger count = itmes.count;
     NSInteger row = (count - 1) / XCcols +1;
@@ -33,8 +33,33 @@
     view.item = itmes;
     [view setUpAllButtons];
     [view setUpDivider];
-    view.backgroundColor = [UIColor blueColor];
-    [XCKeyWindow addSubview:view];
+    //添加黑色的遮挡
+    UIView *blackView =[[UIView alloc]initWithFrame:view.frame];
+    blackView.backgroundColor = [UIColor blackColor];
+    [superView addSubview:blackView];
+    view.transform = CGAffineTransformMakeTranslation(0, view.frame.size.height);
+    //弹簧效果
+    [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.3 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        view.transform = CGAffineTransformIdentity;
+        
+    } completion:^(BOOL finished) {
+        [blackView removeFromSuperview];
+    }];
+    view.backgroundColor = [UIColor blackColor];
+    [superView addSubview:view];
+    
+    return view;
+}
+/**
+ *  移除所有子控件
+ */
+-(void)hide
+{
+    [UIView animateWithDuration:0.5 animations:^{
+        self.transform = CGAffineTransformMakeTranslation(0, -self.frame.size.height);
+    } completion:^(BOOL finished) {
+        [self removeFromSuperview];
+    }];
 }
 -(void)setUpDivider
 {
@@ -49,9 +74,10 @@
         divide.frame = CGRectMake((i + 1) * XCItemWH, 0, 1, self.frame.size.height);
         [self addSubview:divide];
     }
-    NSUInteger rows = (self.Mitems.count -1) / XCcols + 1;
+    
     // 横:总行数-1
     // x = 0 y = （i + 1） * itemWh w:menu.w h 1
+    NSUInteger rows = (self.Mitems.count -1) / XCcols + 1;
     for (int i = 0 ; i <rows - 1; i ++) {
         UIView *divide = [[UIView alloc]init];
         divide.backgroundColor = [UIColor whiteColor];
@@ -65,7 +91,9 @@
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setTitle:items.title forState:UIControlStateNormal];
         [button setImage:items.image forState:UIControlStateNormal];
+        
         [self addSubview:button];
+        
         [self.Mitems addObject:button];
     }
 }
@@ -77,8 +105,9 @@
     NSInteger row = 0 ;
     CGFloat x = 0 ;
     CGFloat y = 0 ;
+    NSUInteger count = self.item.count;
     
-    for (NSInteger i = 0; i <self.item.count; i++) {
+    for (NSInteger i = 0; i <count; i++) {
         col = i % XCcols ;
         row = i / XCcols ;
         x = col * XCItemWH;

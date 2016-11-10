@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface XCDownView : UIView
-+(void)showWithItems:(NSArray *) itmes oriY:(CGFloat)oriY;
++(instancetype)showshowInView:(UIView *)superView items:(NSArray *) itmes oriY:(CGFloat)oriY;
+/**
+ *  移除所有子控件
+ */
+-(void)hide;
 @end
