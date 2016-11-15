@@ -14,24 +14,28 @@
 
 @implementation XCArenaViewController
 
+-(void)loadView
+{
+    UIImageView *image = [[UIImageView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    image.image = [UIImage imageNamed:@"NLArenaBackground"];
+    image.userInteractionEnabled = YES;
+    self.view = image;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UISegmentedControl *seg = [[UISegmentedControl alloc]initWithItems:@[@"足球",@"篮球"]];
+    seg.width +=60;
+    [seg setBackgroundImage:[UIImage imageNamed:@"CPArenaSegmentBG"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [seg setBackgroundImage:[UIImage imageNamed:@"CPArenaSegmentSelectedBG"] forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+    //默认选中哪个seg
+    seg.selectedSegmentIndex = 0;
+    seg.tintColor = XCColor(0, 142, 143);
+    //设置字符串富文本
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    [seg setTitleTextAttributes:dict forState:UIControlStateSelected];
+    
+    self.navigationItem.titleView = seg;
+    
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

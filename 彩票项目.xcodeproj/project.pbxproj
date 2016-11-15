@@ -27,6 +27,7 @@
 		20F6AC301DD2E81500F90158 /* XCItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F6AC2F1DD2E81500F90158 /* XCItems.m */; };
 		6934F7D51DC8E60B0067BBAA /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6934F7D41DC8E60B0067BBAA /* UIImage+image.m */; };
 		6934F7DA1DC8E9DD0067BBAA /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6934F7D91DC8E9DD0067BBAA /* UIView+frame.m */; };
+		699B7B661DDB58EC00724A0B /* XCArenaNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 699B7B651DDB58EC00724A0B /* XCArenaNavigation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,8 @@
 		6934F7D71DC8E7880067BBAA /* 彩票项目.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "彩票项目.pch"; sourceTree = "<group>"; };
 		6934F7D81DC8E9DD0067BBAA /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
 		6934F7D91DC8E9DD0067BBAA /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		699B7B641DDB58EC00724A0B /* XCArenaNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCArenaNavigation.h; sourceTree = "<group>"; };
+		699B7B651DDB58EC00724A0B /* XCArenaNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCArenaNavigation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 			children = (
 				20EB06EF1DC8687700F40FAE /* XCArenaViewController.h */,
 				20EB06F01DC8687700F40FAE /* XCArenaViewController.m */,
+				699B7B641DDB58EC00724A0B /* XCArenaNavigation.h */,
+				699B7B651DDB58EC00724A0B /* XCArenaNavigation.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -432,6 +437,7 @@
 				20EB06F71DC868B100F40FAE /* XCHallViewController.m in Sources */,
 				20EB06F41DC8689400F40FAE /* XCDiscoverViewController.m in Sources */,
 				20EB07091DC86D0600F40FAE /* XCTabbar.m in Sources */,
+				699B7B661DDB58EC00724A0B /* XCArenaNavigation.m in Sources */,
 				20EB06F11DC8687700F40FAE /* XCArenaViewController.m in Sources */,
 				20F6AC301DD2E81500F90158 /* XCItems.m in Sources */,
 				6934F7DA1DC8E9DD0067BBAA /* UIView+frame.m in Sources */,

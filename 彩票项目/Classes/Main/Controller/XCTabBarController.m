@@ -15,6 +15,7 @@
 #import "XCTabbar.h"
 #import "XCTabbarButton.h"
 #import "XCNavigationController.h"
+#import "XCArenaNavigation.h"
 @interface XCTabBarController ()<XCTabbarDelegate>
 // 保存所有控制器对应按钮的内容（UITabBarItem）
 @property (nonatomic, strong) NSMutableArray *items;
@@ -78,9 +79,13 @@
     [self.items addObject:vc.tabBarItem];
     vc.view.backgroundColor = [self randomColor];
     //把控制器包装成导航控制器
-    XCNavigationController *nav = [[XCNavigationController alloc]initWithRootViewController:vc];
+    UINavigationController *nav = [[XCNavigationController alloc]initWithRootViewController:vc];
 //    //设置导航空调背景图片，一定要在导航条显示之前设置
 //    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
+    
+    if ([vc isKindOfClass:[XCArenaViewController class]]) {
+        nav = [[XCArenaNavigation alloc]initWithRootViewController:vc];
+    }
     [self addChildViewController:nav];
 }
 - (UIColor *)randomColor
