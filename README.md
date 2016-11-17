@@ -35,3 +35,4 @@ XCNavigationController *nav = [[XCNavigationController alloc]initWithRootViewCon
 
 - 自定义button的样式 改成图片的x在0，title的位置在图片x的后面，详情见xctitleView
 
+- UIButton的图片拉伸只能用纯代码写，只有UIImAageView可以在storyBoard中实现

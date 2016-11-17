@@ -21,7 +21,7 @@
                                         <rect key="frame" x="0.0" y="35" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r88-kZ-B4j" id="XpJ-Ff-9JR">
-                                            <frame key="frameInset" width="375" height="79.5"/>
+                                            <frame key="frameInset" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_groupBuy_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Tot-In-Idm">
@@ -51,6 +51,9 @@
                                                 <constraint firstItem="LTR-M2-y4D" firstAttribute="leading" secondItem="XpJ-Ff-9JR" secondAttribute="leading" id="glk-Pd-Q3t"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Pf0-F8-hIi" kind="push" id="EiA-PN-FqI"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -69,8 +72,7 @@
                                                         <constraint firstAttribute="height" constant="80" id="a0U-oj-Yd8"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="discovery_groupBuy_title" translatesAutoresizingMaskIntoConstraints="NO" id="zBN-fI-uT2">
-                                                    <frame key="frameInset" minX="2" width="66" height="33"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_groupBuy_title" translatesAutoresizingMaskIntoConstraints="NO" id="zBN-fI-uT2">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="33" id="8a3-tl-L0r"/>
                                                         <constraint firstAttribute="width" constant="66" id="rSv-jX-4up"/>
@@ -186,6 +188,101 @@
             </objects>
             <point key="canvasLocation" x="-186.40000000000001" y="10.344827586206897"/>
         </scene>
+        <!--Lucky View Controller-->
+        <scene sceneID="jTj-Dj-lJy">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="Pf0-F8-hIi" customClass="XCLuckyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7On-Tr-kXl"/>
+                        <viewControllerLayoutGuide type="bottom" id="pBW-Ed-qZg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qWk-Z6-K22" customClass="XCLuckyView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lucky_entry_light0" translatesAutoresizingMaskIntoConstraints="NO" id="CEd-DB-5cN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="6gA-Vb-mJ0"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Z2-Ch-bHX" userLabel="View1">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="3iW-dH-ewF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5c-C0-NHs" userLabel="View2">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zT1-dt-BXp" userLabel="View3">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPs-XQ-Bng">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="75X-sj-ViR"/>
+                                    <constraint firstAttribute="width" constant="191" id="SyG-lT-coB"/>
+                                </constraints>
+                                <state key="normal" image="luck_entry_birthday_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aF4-yl-jya">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="0P9-as-8xs"/>
+                                    <constraint firstAttribute="width" constant="191" id="17e-n2-pm7"/>
+                                </constraints>
+                                <state key="normal" image="luck_entry_lots_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXF-VC-63i">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="Iv3-Vp-wqB"/>
+                                    <constraint firstAttribute="height" constant="140" id="QGG-bY-ecY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="191" id="cVn-TI-mnh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="nBr-6r-fFu"/>
+                                </constraints>
+                                <state key="normal" image="luck_entry_number_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaP-Z2-aaD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="DwR-bi-Bdy"/>
+                                    <constraint firstAttribute="width" constant="191" id="Z6Y-A2-lTS"/>
+                                </constraints>
+                                <state key="normal" image="luck_entry_roulette_button_normal"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Z2-Ch-bHX" firstAttribute="leading" secondItem="qWk-Z6-K22" secondAttribute="leading" id="5uf-X9-YK0"/>
+                            <constraint firstItem="CEd-DB-5cN" firstAttribute="top" secondItem="7On-Tr-kXl" secondAttribute="bottom" constant="69" id="7lP-9A-etn"/>
+                            <constraint firstItem="zT1-dt-BXp" firstAttribute="leading" secondItem="qWk-Z6-K22" secondAttribute="leading" id="7nL-Xn-rqj"/>
+                            <constraint firstItem="zT1-dt-BXp" firstAttribute="top" secondItem="D5c-C0-NHs" secondAttribute="bottom" constant="142" id="9GT-av-VuO"/>
+                            <constraint firstItem="IXF-VC-63i" firstAttribute="centerY" secondItem="CPs-XQ-Bng" secondAttribute="centerY" id="BaS-Ql-ioq"/>
+                            <constraint firstItem="D5c-C0-NHs" firstAttribute="top" secondItem="8Z2-Ch-bHX" secondAttribute="bottom" constant="142" id="EZH-1o-6co"/>
+                            <constraint firstItem="aF4-yl-jya" firstAttribute="top" secondItem="D5c-C0-NHs" secondAttribute="bottom" id="Rmk-B4-gNL"/>
+                            <constraint firstItem="aaP-Z2-aaD" firstAttribute="centerY" secondItem="aF4-yl-jya" secondAttribute="centerY" id="Ta9-Kp-Jt1"/>
+                            <constraint firstItem="8Z2-Ch-bHX" firstAttribute="top" secondItem="qWk-Z6-K22" secondAttribute="top" id="Xh9-N5-NaD"/>
+                            <constraint firstItem="zT1-dt-BXp" firstAttribute="height" secondItem="D5c-C0-NHs" secondAttribute="height" id="Z7q-42-AeG"/>
+                            <constraint firstAttribute="trailing" secondItem="aaP-Z2-aaD" secondAttribute="trailing" id="c0V-pa-dp2"/>
+                            <constraint firstItem="CEd-DB-5cN" firstAttribute="leading" secondItem="qWk-Z6-K22" secondAttribute="leading" constant="80" id="cBR-HX-UA5"/>
+                            <constraint firstItem="pBW-Ed-qZg" firstAttribute="top" secondItem="zT1-dt-BXp" secondAttribute="bottom" id="ccx-Ry-E2N"/>
+                            <constraint firstItem="D5c-C0-NHs" firstAttribute="leading" secondItem="qWk-Z6-K22" secondAttribute="leading" id="imE-KY-hdH"/>
+                            <constraint firstItem="D5c-C0-NHs" firstAttribute="height" secondItem="8Z2-Ch-bHX" secondAttribute="height" id="kKh-us-KKB"/>
+                            <constraint firstItem="aF4-yl-jya" firstAttribute="leading" secondItem="qWk-Z6-K22" secondAttribute="leading" id="mwB-sI-ZQQ"/>
+                            <constraint firstItem="D5c-C0-NHs" firstAttribute="width" secondItem="8Z2-Ch-bHX" secondAttribute="width" id="oI0-me-MsA"/>
+                            <constraint firstItem="zT1-dt-BXp" firstAttribute="width" secondItem="D5c-C0-NHs" secondAttribute="width" id="rUY-dh-Ku0"/>
+                            <constraint firstAttribute="trailing" secondItem="IXF-VC-63i" secondAttribute="trailing" id="uv9-v7-S7o"/>
+                            <constraint firstItem="CEd-DB-5cN" firstAttribute="centerX" secondItem="qWk-Z6-K22" secondAttribute="centerX" id="vl9-aC-9c3"/>
+                            <constraint firstItem="CPs-XQ-Bng" firstAttribute="leading" secondItem="qWk-Z6-K22" secondAttribute="leading" id="yUE-tX-GEP"/>
+                            <constraint firstItem="CPs-XQ-Bng" firstAttribute="top" secondItem="8Z2-Ch-bHX" secondAttribute="bottom" constant="0.5" id="zjI-yS-70h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nXc-SZ-HQK"/>
+                    <connections>
+                        <outlet property="lightImage" destination="CEd-DB-5cN" id="i3U-kt-Q4u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R59-7i-S3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="-328.78560719640183"/>
+        </scene>
         <!--Discover Buy View Controller-->
         <scene sceneID="CES-OX-ukl">
             <objects>
@@ -213,7 +310,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohN-SH-sfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="556" y="-1"/>
+            <point key="canvasLocation" x="583" y="340"/>
         </scene>
     </scenes>
     <resources>
@@ -221,5 +318,10 @@
         <image name="discovery_groupBuy_title" width="54" height="23"/>
         <image name="discovery_luckyBet_icon" width="101" height="79"/>
         <image name="discovery_luckyBet_title" width="96" height="23"/>
+        <image name="luck_entry_birthday_button_normal" width="137" height="140"/>
+        <image name="luck_entry_lots_button_normal" width="153" height="152"/>
+        <image name="luck_entry_number_button_normal" width="130" height="139"/>
+        <image name="luck_entry_roulette_button_normal" width="140" height="144"/>
+        <image name="lucky_entry_light0" width="231" height="29"/>
     </resources>
 </document>

@@ -9,6 +9,7 @@
 #import "XCLotteryViewController.h"
 
 @interface XCLotteryViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 @end
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //UIButton的图片拉伸只能用纯代码写，只有UIImAageView可以在storyBoard中实现
+    UIImage * image =self.loginButton.currentBackgroundImage;
+    image = [image stretchableImageWithLeftCapWidth:image.size.width *0.5 topCapHeight:image.size.height *0.5];
+    [self.loginButton setBackgroundImage:image forState:UIControlStateNormal];
     [self setUpNav];
 }
 -(void)setUpNav

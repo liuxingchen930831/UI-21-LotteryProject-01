@@ -13,6 +13,9 @@
 		207882B71DD02C6700A369AF /* XMGCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 207882B41DD02C6700A369AF /* XMGCover.m */; };
 		20DCAF4F1DDD93270063ACEC /* XCDiscoverBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DCAF4E1DDD93270063ACEC /* XCDiscoverBuyViewController.m */; };
 		20DCAF521DDD9BFE0063ACEC /* XCTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DCAF511DDD9BFE0063ACEC /* XCTitleView.m */; };
+		20DCAF551DDDACA70063ACEC /* XCLuckyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DCAF541DDDACA70063ACEC /* XCLuckyViewController.m */; };
+		20DCAF581DDDAD230063ACEC /* XCLuckyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DCAF571DDDAD220063ACEC /* XCLuckyView.m */; };
+		20DCAF5A1DDDBCEE0063ACEC /* XCLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20DCAF591DDDBCEE0063ACEC /* XCLotteryViewController.xib */; };
 		20EB06C41DC866D600F40FAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB06C31DC866D600F40FAE /* main.m */; };
 		20EB06C71DC866D600F40FAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB06C61DC866D600F40FAE /* AppDelegate.m */; };
 		20EB06CF1DC866D600F40FAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EB06CE1DC866D600F40FAE /* Assets.xcassets */; };
@@ -44,6 +47,11 @@
 		20DCAF4E1DDD93270063ACEC /* XCDiscoverBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDiscoverBuyViewController.m; sourceTree = "<group>"; };
 		20DCAF501DDD9BFE0063ACEC /* XCTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCTitleView.h; path = "彩票项目/Classes/Discover(发现)/Controller/XCTitleView.h"; sourceTree = SOURCE_ROOT; };
 		20DCAF511DDD9BFE0063ACEC /* XCTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XCTitleView.m; path = "彩票项目/Classes/Discover(发现)/Controller/XCTitleView.m"; sourceTree = SOURCE_ROOT; };
+		20DCAF531DDDACA70063ACEC /* XCLuckyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCLuckyViewController.h; sourceTree = "<group>"; };
+		20DCAF541DDDACA70063ACEC /* XCLuckyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCLuckyViewController.m; sourceTree = "<group>"; };
+		20DCAF561DDDAD220063ACEC /* XCLuckyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCLuckyView.h; path = "彩票项目/Classes/Discover(发现)/Controller/XCLuckyView.h"; sourceTree = SOURCE_ROOT; };
+		20DCAF571DDDAD220063ACEC /* XCLuckyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XCLuckyView.m; path = "彩票项目/Classes/Discover(发现)/Controller/XCLuckyView.m"; sourceTree = SOURCE_ROOT; };
+		20DCAF591DDDBCEE0063ACEC /* XCLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCLotteryViewController.xib; sourceTree = "<group>"; };
 		20EB06BF1DC866D600F40FAE /* 彩票项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EB06C31DC866D600F40FAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20EB06C51DC866D600F40FAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -202,6 +210,8 @@
 				20091FB11DDD837700D6E066 /* XCDiscoverViewController.storyboard */,
 				20DCAF4D1DDD93270063ACEC /* XCDiscoverBuyViewController.h */,
 				20DCAF4E1DDD93270063ACEC /* XCDiscoverBuyViewController.m */,
+				20DCAF531DDDACA70063ACEC /* XCLuckyViewController.h */,
+				20DCAF541DDDACA70063ACEC /* XCLuckyViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,6 +228,8 @@
 			children = (
 				20DCAF501DDD9BFE0063ACEC /* XCTitleView.h */,
 				20DCAF511DDD9BFE0063ACEC /* XCTitleView.m */,
+				20DCAF561DDDAD220063ACEC /* XCLuckyView.h */,
+				20DCAF571DDDAD220063ACEC /* XCLuckyView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +334,7 @@
 			children = (
 				20EB06F81DC868DC00F40FAE /* XCLotteryViewController.h */,
 				20EB06F91DC868DC00F40FAE /* XCLotteryViewController.m */,
+				20DCAF591DDDBCEE0063ACEC /* XCLotteryViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -431,6 +444,7 @@
 				20EB06D21DC866D600F40FAE /* LaunchScreen.storyboard in Resources */,
 				20EB06CF1DC866D600F40FAE /* Assets.xcassets in Resources */,
 				207882B61DD02C6700A369AF /* XMGActiveMenu.xib in Resources */,
+				20DCAF5A1DDDBCEE0063ACEC /* XCLotteryViewController.xib in Resources */,
 				20091FB21DDD837700D6E066 /* XCDiscoverViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +462,7 @@
 				20EB06C71DC866D600F40FAE /* AppDelegate.m in Sources */,
 				20EB07061DC86CF000F40FAE /* XCTabBarController.m in Sources */,
 				20EB06C41DC866D600F40FAE /* main.m in Sources */,
+				20DCAF581DDDAD230063ACEC /* XCLuckyView.m in Sources */,
 				20F6AC2D1DD2E7E300F90158 /* XCDownView.m in Sources */,
 				6934F7D51DC8E60B0067BBAA /* UIImage+image.m in Sources */,
 				20EB06F71DC868B100F40FAE /* XCHallViewController.m in Sources */,
@@ -457,6 +472,7 @@
 				20EB06F11DC8687700F40FAE /* XCArenaViewController.m in Sources */,
 				20F6AC301DD2E81500F90158 /* XCItems.m in Sources */,
 				6934F7DA1DC8E9DD0067BBAA /* UIView+frame.m in Sources */,
+				20DCAF551DDDACA70063ACEC /* XCLuckyViewController.m in Sources */,
 				207882B71DD02C6700A369AF /* XMGCover.m in Sources */,
 				20DCAF521DDD9BFE0063ACEC /* XCTitleView.m in Sources */,
 				20EB070F1DC8936D00F40FAE /* XCNavigationController.m in Sources */,

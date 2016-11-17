@@ -55,7 +55,7 @@
     for (UIView *childView in self.tabBar.subviews) {
         if (![childView isKindOfClass:[XCTabbar class]]) {
             [childView removeFromSuperview];
-            NSLog(@"childView = %@",childView);
+
         }
     }
 }
