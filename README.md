@@ -31,3 +31,7 @@ XCNavigationController *nav = [[XCNavigationController alloc]initWithRootViewCon
 
 - imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal 显示默认图片不渲染
 
+- 用代码和storyboard结合加载一个页面并且实现跳转
+
+- 自定义button的样式 改成图片的x在0，title的位置在图片x的后面，详情见xctitleView
+

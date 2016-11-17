@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20091FB21DDD837700D6E066 /* XCDiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20091FB11DDD837700D6E066 /* XCDiscoverViewController.storyboard */; };
 		207882B51DD02C6700A369AF /* XMGActiveMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 207882B11DD02C6700A369AF /* XMGActiveMenu.m */; };
 		207882B61DD02C6700A369AF /* XMGActiveMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 207882B21DD02C6700A369AF /* XMGActiveMenu.xib */; };
 		207882B71DD02C6700A369AF /* XMGCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 207882B41DD02C6700A369AF /* XMGCover.m */; };
+		20DCAF4F1DDD93270063ACEC /* XCDiscoverBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DCAF4E1DDD93270063ACEC /* XCDiscoverBuyViewController.m */; };
+		20DCAF521DDD9BFE0063ACEC /* XCTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DCAF511DDD9BFE0063ACEC /* XCTitleView.m */; };
 		20EB06C41DC866D600F40FAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB06C31DC866D600F40FAE /* main.m */; };
 		20EB06C71DC866D600F40FAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB06C61DC866D600F40FAE /* AppDelegate.m */; };
 		20EB06CF1DC866D600F40FAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EB06CE1DC866D600F40FAE /* Assets.xcassets */; };
@@ -31,11 +34,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20091FB11DDD837700D6E066 /* XCDiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XCDiscoverViewController.storyboard; sourceTree = "<group>"; };
 		207882B01DD02C6700A369AF /* XMGActiveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGActiveMenu.h; sourceTree = "<group>"; };
 		207882B11DD02C6700A369AF /* XMGActiveMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGActiveMenu.m; sourceTree = "<group>"; };
 		207882B21DD02C6700A369AF /* XMGActiveMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGActiveMenu.xib; sourceTree = "<group>"; };
 		207882B31DD02C6700A369AF /* XMGCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGCover.h; sourceTree = "<group>"; };
 		207882B41DD02C6700A369AF /* XMGCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGCover.m; sourceTree = "<group>"; };
+		20DCAF4D1DDD93270063ACEC /* XCDiscoverBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDiscoverBuyViewController.h; sourceTree = "<group>"; };
+		20DCAF4E1DDD93270063ACEC /* XCDiscoverBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDiscoverBuyViewController.m; sourceTree = "<group>"; };
+		20DCAF501DDD9BFE0063ACEC /* XCTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCTitleView.h; path = "彩票项目/Classes/Discover(发现)/Controller/XCTitleView.h"; sourceTree = SOURCE_ROOT; };
+		20DCAF511DDD9BFE0063ACEC /* XCTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XCTitleView.m; path = "彩票项目/Classes/Discover(发现)/Controller/XCTitleView.m"; sourceTree = SOURCE_ROOT; };
 		20EB06BF1DC866D600F40FAE /* 彩票项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EB06C31DC866D600F40FAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20EB06C51DC866D600F40FAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -191,6 +199,9 @@
 			children = (
 				20EB06F21DC8689400F40FAE /* XCDiscoverViewController.h */,
 				20EB06F31DC8689400F40FAE /* XCDiscoverViewController.m */,
+				20091FB11DDD837700D6E066 /* XCDiscoverViewController.storyboard */,
+				20DCAF4D1DDD93270063ACEC /* XCDiscoverBuyViewController.h */,
+				20DCAF4E1DDD93270063ACEC /* XCDiscoverBuyViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,6 +216,8 @@
 		20EB06E11DC8683000F40FAE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				20DCAF501DDD9BFE0063ACEC /* XCTitleView.h */,
+				20DCAF511DDD9BFE0063ACEC /* XCTitleView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -388,6 +401,7 @@
 				TargetAttributes = {
 					20EB06BE1DC866D600F40FAE = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = B72USU3T8Q;
 					};
 				};
 			};
@@ -417,6 +431,7 @@
 				20EB06D21DC866D600F40FAE /* LaunchScreen.storyboard in Resources */,
 				20EB06CF1DC866D600F40FAE /* Assets.xcassets in Resources */,
 				207882B61DD02C6700A369AF /* XMGActiveMenu.xib in Resources */,
+				20091FB21DDD837700D6E066 /* XCDiscoverViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20EB070C1DC884C500F40FAE /* XCTabbarButton.m in Sources */,
+				20DCAF4F1DDD93270063ACEC /* XCDiscoverBuyViewController.m in Sources */,
 				20EB07001DC8691F00F40FAE /* XCHistoryViewController.m in Sources */,
 				20EB06C71DC866D600F40FAE /* AppDelegate.m in Sources */,
 				20EB07061DC86CF000F40FAE /* XCTabBarController.m in Sources */,
@@ -442,6 +458,7 @@
 				20F6AC301DD2E81500F90158 /* XCItems.m in Sources */,
 				6934F7DA1DC8E9DD0067BBAA /* UIView+frame.m in Sources */,
 				207882B71DD02C6700A369AF /* XMGCover.m in Sources */,
+				20DCAF521DDD9BFE0063ACEC /* XCTitleView.m in Sources */,
 				20EB070F1DC8936D00F40FAE /* XCNavigationController.m in Sources */,
 				20EB06FA1DC868DC00F40FAE /* XCLotteryViewController.m in Sources */,
 				207882B51DD02C6700A369AF /* XMGActiveMenu.m in Sources */,
@@ -548,10 +565,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B72USU3T8Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "彩票项目/彩票项目.pch";
 				INFOPLIST_FILE = "彩票项目/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.intelet.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -562,10 +580,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B72USU3T8Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "彩票项目/彩票项目.pch";
 				INFOPLIST_FILE = "彩票项目/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.intelet.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
