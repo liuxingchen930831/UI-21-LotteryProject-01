@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		20091FB21DDD837700D6E066 /* XCDiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20091FB11DDD837700D6E066 /* XCDiscoverViewController.storyboard */; };
+		202734EF1DDECC9D00CCD543 /* XCNewFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 202734EE1DDECC9D00CCD543 /* XCNewFeatureCell.m */; };
+		204C67E01DE2F7DD00DFA2BF /* XCSaveDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 204C67DF1DE2F7DD00DFA2BF /* XCSaveDefaults.m */; };
+		204C67E31DE2FCED00DFA2BF /* XCGudieTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 204C67E21DE2FCED00DFA2BF /* XCGudieTool.m */; };
 		207882B51DD02C6700A369AF /* XMGActiveMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 207882B11DD02C6700A369AF /* XMGActiveMenu.m */; };
 		207882B61DD02C6700A369AF /* XMGActiveMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 207882B21DD02C6700A369AF /* XMGActiveMenu.xib */; };
 		207882B71DD02C6700A369AF /* XMGCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 207882B41DD02C6700A369AF /* XMGCover.m */; };
@@ -31,6 +34,7 @@
 		20EB070F1DC8936D00F40FAE /* XCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB070E1DC8936D00F40FAE /* XCNavigationController.m */; };
 		20F6AC2D1DD2E7E300F90158 /* XCDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F6AC2C1DD2E7E300F90158 /* XCDownView.m */; };
 		20F6AC301DD2E81500F90158 /* XCItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F6AC2F1DD2E81500F90158 /* XCItems.m */; };
+		20FC53E61DDEACC700E1D542 /* XCNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC53E51DDEACC700E1D542 /* XCNewFeatureViewController.m */; };
 		6934F7D51DC8E60B0067BBAA /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6934F7D41DC8E60B0067BBAA /* UIImage+image.m */; };
 		6934F7DA1DC8E9DD0067BBAA /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6934F7D91DC8E9DD0067BBAA /* UIView+frame.m */; };
 		699B7B661DDB58EC00724A0B /* XCArenaNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 699B7B651DDB58EC00724A0B /* XCArenaNavigation.m */; };
@@ -38,6 +42,12 @@
 
 /* Begin PBXFileReference section */
 		20091FB11DDD837700D6E066 /* XCDiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XCDiscoverViewController.storyboard; sourceTree = "<group>"; };
+		202734ED1DDECC9D00CCD543 /* XCNewFeatureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCNewFeatureCell.h; sourceTree = "<group>"; };
+		202734EE1DDECC9D00CCD543 /* XCNewFeatureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCNewFeatureCell.m; sourceTree = "<group>"; };
+		204C67DE1DE2F7DD00DFA2BF /* XCSaveDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCSaveDefaults.h; sourceTree = "<group>"; };
+		204C67DF1DE2F7DD00DFA2BF /* XCSaveDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCSaveDefaults.m; sourceTree = "<group>"; };
+		204C67E11DE2FCED00DFA2BF /* XCGudieTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCGudieTool.h; sourceTree = "<group>"; };
+		204C67E21DE2FCED00DFA2BF /* XCGudieTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCGudieTool.m; sourceTree = "<group>"; };
 		207882B01DD02C6700A369AF /* XMGActiveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGActiveMenu.h; sourceTree = "<group>"; };
 		207882B11DD02C6700A369AF /* XMGActiveMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGActiveMenu.m; sourceTree = "<group>"; };
 		207882B21DD02C6700A369AF /* XMGActiveMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGActiveMenu.xib; sourceTree = "<group>"; };
@@ -81,6 +91,8 @@
 		20F6AC2C1DD2E7E300F90158 /* XCDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDownView.m; sourceTree = "<group>"; };
 		20F6AC2E1DD2E81500F90158 /* XCItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCItems.h; path = "彩票项目/Classes/Hall(购彩大厅)/View/XCItems.h"; sourceTree = SOURCE_ROOT; };
 		20F6AC2F1DD2E81500F90158 /* XCItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XCItems.m; path = "彩票项目/Classes/Hall(购彩大厅)/View/XCItems.m"; sourceTree = SOURCE_ROOT; };
+		20FC53E41DDEACC700E1D542 /* XCNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCNewFeatureViewController.h; sourceTree = "<group>"; };
+		20FC53E51DDEACC700E1D542 /* XCNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCNewFeatureViewController.m; sourceTree = "<group>"; };
 		6934F7D31DC8E60B0067BBAA /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
 		6934F7D41DC8E60B0067BBAA /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
 		6934F7D71DC8E7880067BBAA /* 彩票项目.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "彩票项目.pch"; sourceTree = "<group>"; };
@@ -101,6 +113,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		206342461DE2DEF700F359DB /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				206342471DE2DEF700F359DB /* RootViewController */,
+				206342481DE2DEF700F359DB /* Save */,
+			);
+			path = "Tools(工具)";
+			sourceTree = "<group>";
+		};
+		206342471DE2DEF700F359DB /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				204C67E11DE2FCED00DFA2BF /* XCGudieTool.h */,
+				204C67E21DE2FCED00DFA2BF /* XCGudieTool.m */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		206342481DE2DEF700F359DB /* Save */ = {
+			isa = PBXGroup;
+			children = (
+				204C67DE1DE2F7DD00DFA2BF /* XCSaveDefaults.h */,
+				204C67DF1DE2F7DD00DFA2BF /* XCSaveDefaults.m */,
+			);
+			path = Save;
+			sourceTree = "<group>";
+		};
 		20EB06B61DC866D600F40FAE = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +186,8 @@
 		20EB06D91DC8683000F40FAE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				206342461DE2DEF700F359DB /* Tools(工具) */,
+				20FC53E01DDEAC9900E1D542 /* NewFeature(新特性) */,
 				20EB06DA1DC8683000F40FAE /* Arena(竞技场) */,
 				20EB06DE1DC8683000F40FAE /* Discover(发现) */,
 				20EB06E21DC8683000F40FAE /* Hall(购彩大厅) */,
@@ -382,6 +423,41 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		20FC53E01DDEAC9900E1D542 /* NewFeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				20FC53E11DDEAC9900E1D542 /* Controller */,
+				20FC53E21DDEAC9900E1D542 /* Model */,
+				20FC53E31DDEAC9900E1D542 /* View */,
+			);
+			path = "NewFeature(新特性)";
+			sourceTree = "<group>";
+		};
+		20FC53E11DDEAC9900E1D542 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20FC53E41DDEACC700E1D542 /* XCNewFeatureViewController.h */,
+				20FC53E51DDEACC700E1D542 /* XCNewFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		20FC53E21DDEAC9900E1D542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20FC53E31DDEAC9900E1D542 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				202734ED1DDECC9D00CCD543 /* XCNewFeatureCell.h */,
+				202734EE1DDECC9D00CCD543 /* XCNewFeatureCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -464,14 +540,18 @@
 				20EB06C41DC866D600F40FAE /* main.m in Sources */,
 				20DCAF581DDDAD230063ACEC /* XCLuckyView.m in Sources */,
 				20F6AC2D1DD2E7E300F90158 /* XCDownView.m in Sources */,
+				20FC53E61DDEACC700E1D542 /* XCNewFeatureViewController.m in Sources */,
 				6934F7D51DC8E60B0067BBAA /* UIImage+image.m in Sources */,
 				20EB06F71DC868B100F40FAE /* XCHallViewController.m in Sources */,
 				20EB06F41DC8689400F40FAE /* XCDiscoverViewController.m in Sources */,
 				20EB07091DC86D0600F40FAE /* XCTabbar.m in Sources */,
+				204C67E01DE2F7DD00DFA2BF /* XCSaveDefaults.m in Sources */,
 				699B7B661DDB58EC00724A0B /* XCArenaNavigation.m in Sources */,
+				202734EF1DDECC9D00CCD543 /* XCNewFeatureCell.m in Sources */,
 				20EB06F11DC8687700F40FAE /* XCArenaViewController.m in Sources */,
 				20F6AC301DD2E81500F90158 /* XCItems.m in Sources */,
 				6934F7DA1DC8E9DD0067BBAA /* UIView+frame.m in Sources */,
+				204C67E31DE2FCED00DFA2BF /* XCGudieTool.m in Sources */,
 				20DCAF551DDDACA70063ACEC /* XCLuckyViewController.m in Sources */,
 				207882B71DD02C6700A369AF /* XMGCover.m in Sources */,
 				20DCAF521DDD9BFE0063ACEC /* XCTitleView.m in Sources */,

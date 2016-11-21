@@ -7,9 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "XCTabBarController.h"
+#import "XCGudieTool.h"
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
@@ -17,10 +16,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    //UITabBarController控制器的View不是懒加载，在创建控制器的时候就会加载
-    XCTabBarController *tabbar = [[XCTabBarController alloc]init];
     self.window.backgroundColor = [UIColor purpleColor];
-    self.window.rootViewController = tabbar;
+    self.window.rootViewController = [XCGudieTool chooseRootView];
     [self.window makeKeyAndVisible];
     
     return YES;
