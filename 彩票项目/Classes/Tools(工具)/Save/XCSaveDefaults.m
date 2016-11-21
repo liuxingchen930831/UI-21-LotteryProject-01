@@ -15,6 +15,6 @@
 }
 +(void)setObject:(id)value forKey:(NSString *)defaultName
 {
-    return [[NSUserDefaults standardUserDefaults] setObject:defaultName forKey:defaultName];
+    return [[NSUserDefaults standardUserDefaults] setObject:value forKey:defaultName];
 }
 @end

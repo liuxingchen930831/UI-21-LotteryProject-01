@@ -38,6 +38,7 @@
 		6934F7D51DC8E60B0067BBAA /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6934F7D41DC8E60B0067BBAA /* UIImage+image.m */; };
 		6934F7DA1DC8E9DD0067BBAA /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6934F7D91DC8E9DD0067BBAA /* UIView+frame.m */; };
 		699B7B661DDB58EC00724A0B /* XCArenaNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 699B7B651DDB58EC00724A0B /* XCArenaNavigation.m */; };
+		69E6EAA21DE33D5F00C2843F /* XCSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E6EAA11DE33D5F00C2843F /* XCSettingController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,8 @@
 		6934F7D91DC8E9DD0067BBAA /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 		699B7B641DDB58EC00724A0B /* XCArenaNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCArenaNavigation.h; sourceTree = "<group>"; };
 		699B7B651DDB58EC00724A0B /* XCArenaNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCArenaNavigation.m; sourceTree = "<group>"; };
+		69E6EAA01DE33D5F00C2843F /* XCSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCSettingController.h; sourceTree = "<group>"; };
+		69E6EAA11DE33D5F00C2843F /* XCSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCSettingController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +189,7 @@
 		20EB06D91DC8683000F40FAE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				69E6EA9C1DE33D4000C2843F /* SettingO(设置) */,
 				206342461DE2DEF700F359DB /* Tools(工具) */,
 				20FC53E01DDEAC9900E1D542 /* NewFeature(新特性) */,
 				20EB06DA1DC8683000F40FAE /* Arena(竞技场) */,
@@ -458,6 +462,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		69E6EA9C1DE33D4000C2843F /* SettingO(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				69E6EA9D1DE33D4000C2843F /* Controller */,
+				69E6EA9E1DE33D4000C2843F /* Model */,
+				69E6EA9F1DE33D4000C2843F /* View */,
+			);
+			path = "SettingO(设置)";
+			sourceTree = "<group>";
+		};
+		69E6EA9D1DE33D4000C2843F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69E6EAA01DE33D5F00C2843F /* XCSettingController.h */,
+				69E6EAA11DE33D5F00C2843F /* XCSettingController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69E6EA9E1DE33D4000C2843F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69E6EA9F1DE33D4000C2843F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -554,6 +591,7 @@
 				204C67E31DE2FCED00DFA2BF /* XCGudieTool.m in Sources */,
 				20DCAF551DDDACA70063ACEC /* XCLuckyViewController.m in Sources */,
 				207882B71DD02C6700A369AF /* XMGCover.m in Sources */,
+				69E6EAA21DE33D5F00C2843F /* XCSettingController.m in Sources */,
 				20DCAF521DDD9BFE0063ACEC /* XCTitleView.m in Sources */,
 				20EB070F1DC8936D00F40FAE /* XCNavigationController.m in Sources */,
 				20EB06FA1DC868DC00F40FAE /* XCLotteryViewController.m in Sources */,

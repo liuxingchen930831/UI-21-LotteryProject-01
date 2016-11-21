@@ -7,7 +7,7 @@
 //
 
 #import "XCLotteryViewController.h"
-
+#import "XCSettingController.h"
 @interface XCLotteryViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
@@ -37,6 +37,7 @@
 }
 -(void)setting
 {
-    NSLog(@"setting");
+    XCSettingController *vc = [[XCSettingController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end

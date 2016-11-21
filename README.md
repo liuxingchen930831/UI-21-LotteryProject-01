@@ -36,3 +36,8 @@ XCNavigationController *nav = [[XCNavigationController alloc]initWithRootViewCon
 - 自定义button的样式 改成图片的x在0，title的位置在图片x的后面，详情见xctitleView
 
 - UIButton的图片拉伸只能用纯代码写，只有UIImAageView可以在storyBoard中实现
+
+- 当我们接手一个项目时候，最好把要写的项目功能类似的写在一个自定义得出类里，这样以便于以后产品经理提出产品修改，可以节省大量的重复工作。比如写一个存储类，我们可以直接用系统的NSUserDefaults，但是如果产品经理说咱们用数据区sqlite吧..那你这东西不是白写了，最好是定义一个类，比如我们可以把数据存储都放在这个类里，就算现在用NSUserDefaults，明天换SQLite，那也是继承我们自己写的类，比较方便。（详情请款Tools工具类）
+
+- 自定义两种方式导航控制的left按钮 1.第一种自定义uibarbuttonitem但是此方法会让导航控制侧滑失效，需要把导航控制器的手势代理设置为nil。2.第二种设置bar的颜色，然后把字的位置放在负数的位置
+
